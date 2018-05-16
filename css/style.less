@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Skranji|Montserrat');
+
+*{
+	padding:0;
+	margin:0;
+}
+p{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.container{
+	width: 95%;
+	margin: auto;
+	color: @primary-color;
+	padding: 10px 0;
+	display: flex;
+}
+@primary-color:#ffffff;
+.wrapper{
+	width:100%;
+	margin :auto;
+	background:#ccc;
+	overflow:hidden;
+}
+.top-strip{
+	background: #000000;
+}
+.top-strip ul{
+	padding: 0;
+	margin: 0;
+}
+.top-strip ul li{
+	list-style: none;
+	display: inline-block;
+}
+.top-strip ul li a{
+	display: block;
+	padding-left: 5px;
+	color: @primary-color;
+	text-decoration: none;
+	font-family: Montserrat;
+}
+.top-strip span{
+	font-family: Montserrat;	
+}
+.top-strip ul li a:after{
+	content: "/";
+	padding-left: 5px;
+	}
+.header{
+	background:url('../images/back.jpg');
+	background-position:center;
+	height:660px;
+}
+.banner{
+	background:rgba(0,0,0,0.4);
+	height:660px;
+	width:100%;
+}
+.logo{
+	top: 15%;
+	position: relative;
+	width:100%; 
+}
+.caption{
+	position: relative;
+	width: 50%;
+	margin: auto;
+	top: 20%;
+	padding: 20px;
+	background: rgba(0,0,0,0.2);
+	border:1px solid @primary-color;
+}
+.logo h1{
+	color:@primary-color;
+	font-family:Skranji;
+	font-size:5em;
+	font-weight:bold;
+	text-align:center;
+	letter-spacing:3px;
+}
+.header .right{
+position:fixed;
+top:25%;
+right:0;
+}
+.header .left{
+position:fixed;
+top:25%;
+left:0;
+}
+.left ul{
+padding: 0;
+margin: 0;
+}
+.left ul li a{
+background:rgba(0,0,0,0.4);	
+ display: block;
+ padding: 8px 10px 10px 0;
+ color: @primary-color !important;
+ text-decoration: none;
+ position: relative;
+ left: -108px;
+ transition: left 1s;
+    -webkit-transition: left 1s;
+    display: flex;
+    text-align: center;
+    font-family: Montserrat;
+}
+.right ul{
+	padding: 0;
+	margin: 0;
+}
+.left ul li a:hover{
+	position: relative;
+	left: 0px;
+
+}
+.left ul li a span{
+	margin: 0;
+	font-size: 16px;
+	border-top: 4px double #ffffff;
+	border-bottom: 4px double #ffffff;
+	padding: 5px 10px;
+	width: 77%;
+	position: relative;
+	
+}
+.left ul li a i{
+	padding-left: 10px;
+	font-size: 30px;
+	text-align: right;
+	width: 23%;
+}
+.right ul li a{
+background:rgba(0,0,0,0.4);	
+ display: block;
+ padding: 8px 10px 10px 0;
+ color: @primary-color !important;
+ text-decoration: none;
+ position: relative;
+ transition: right 1s;
+    -webkit-transition: left 1s;
+    display: flex;
+    text-align: center;
+}
+.right ul li{
+	list-style: none;
+}
+.right ul li a i{
+	padding-left: 10px;
+	font-size: 30px;
+	text-align: right;
+	width: 23%;
+}
